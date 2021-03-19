@@ -35,6 +35,7 @@
     }
     .slider-text{
        color: rgb(136, 170, 12);
+       background: #000000c4;
     }
     .slider-img{
         text-align: center;
