@@ -1,4 +1,8 @@
-<nav class="navbar navbar-default">
+<?php
+    use App\Http\Controllers\ProductController;
+    $total= ProductController::cartItem();
+?>
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -8,7 +12,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a href="#" class="navbar-brand"><img  src=" logotrans.png " ></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,10 +26,12 @@
           <div class="form-group">
             <input type="text" name="query" class="form-control search-box" placeholder="Search">
           </div>
-          <button type="submit" class="btn btn-default">Search</button>
+          <button type="submit" class="btn btn-default">
+              <i class="glyphicon glyphicon-search"></i>
+          </button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
+          <li><a href="#">cart({{ $total }})</a></li>
 
         </ul>
       </div><!-- /.navbar-collapse -->

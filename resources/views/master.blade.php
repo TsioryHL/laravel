@@ -34,7 +34,10 @@
         height: 600px;
     }
     .slider-text{
-        background: #123f0c73;
+       color: rgb(136, 170, 12);
+    }
+    .slider-img{
+        text-align: center;
     }
     .trending-image{
         height: 100px;
@@ -42,15 +45,25 @@
     .trending-item{
         float: left;
         width: 20%;
+
     }
     .trending-wrapper{
         margin: 30px;
+
     }
     .detail-img{
         height:200px;
     }
     .search-box{
-        width: 500px !important
+        width: 300px !important
+    }
+    .navbar{
+        border-radius:0px;
+
+    }
+
+    .text-trending{
+        text-align: center;
     }
 </style>
 <script>
